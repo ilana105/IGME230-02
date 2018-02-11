@@ -1,13 +1,13 @@
 # Can You Survive Hell's Kitchen?
 
 ## I. High Concept
-Prove that you are worthy of the black jacket and Hell's Kitchen winner title.
+Prove that you are worthy of the black jacket and the Hell's Kitchen winner title.
 
 ## II. Genre
 Matching puzzle, mini-games, puzzle, survival, time management
 
 ## III. Platform
-Tablet, phone, mobile friendly
+Tablet, phone, mobile friendly, possible on PC as well, not for console
 
 ## IV. Story
 You are an up and coming chef and think that you have what it takes to become the next Hell's Kitchen winner.
@@ -18,6 +18,7 @@ There are series of different mini-games to help you gain advantages and become 
 
 ## V. Esthetics
 Graphics- Photo-realistic, cartoonish
+(Cartoon cutouts for the dialog and such, and then having photo-realistic back grounds)
 
 Sound- Gordon Ramsay sound board *insults* ("It's RAW", "You donkey!", "I'd wish you'd jump in the oven! That would make my life a lot easier!", "I've never ever, ever, ever met someone I believe in as little as you") *motivational* ("Keep your head high") //add more
 Intense music for challenges, timer countdown
@@ -26,10 +27,10 @@ Theres background music, also sayings will trigger if the player is either doing
 
 ## VI. Gameplay
 ### Mechanics
-Matching, Quick Tapping, Memorizing
+Matching, Quick Tapping/clicking, Memorizing
 
 ### Control
-Touch 
+Touch/Click
 
 ### Instructions
 Before every mini-game, there will be an option to view instructions for the game
