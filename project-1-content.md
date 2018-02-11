@@ -41,6 +41,11 @@ The player must be able to survive the competition.
 There will be mini games that will either provide an advantage or hinder the player depending on the results.
 
 ## VII. Screenshots
+Screenshot 1 is the intro screen to the game, where the user would input their 'name' and 'hometown'.
+(https://github.com/ilana105/IGME230-02/blob/master/SS1igme230.ai)
+
+Screenshot 2 is a basic outline of what the instructions would look like for a mini game. This mini game is for collecting ingredients and making a dish from the ingredients.
+(https://github.com/ilana105/IGME230-02/blob/master/SS2igme230.ai)
 
 ## VIII. Other
 
