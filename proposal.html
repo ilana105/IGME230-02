@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cuprum" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/indexcss.css">
+
+	<title>HK Game Proposal</title>
+</head>
+
+	<div class = "header">
+		<h1></h1>
+	</div>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/index.html">Home</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/project.html">Test Your Skills</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/proposal.html">Proposal</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/documentation.html">Documentation</a>
+</div>
+
+<span id = "navIcon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<div class = "content">
+
+	<h1>Running The Pass </h1>
+
+	<p>This minigame will be made with pixels</p>
+
+	<p>	
+	The focus of the first mini-game will be running the pass.<br>
+	The goal of the game is to perfectly read back all of the orders.<br>
+
+	<p>There will be a timer and if the player isn't done with the ticket then Ramsay will say something negative.If the user gets a perfect ticket, then Ramsay will say something positive.<br></p>
+
+	<p>The score will be shown at the end of the game, prompt you to enter your name and will record your score in the local storage.<br>
+	</p>
+	<br>
+
+	<button class = "accordion">Gameplay</button>
+	<div class = "panel">
+		<p><strong>Mechanics:</strong> Memorization, Matching</p>
+
+		<p><strong>Control:</strong> Touch/Click</p>
+
+		<p><strong>Instructions:</strong> Tap the dishes back in the correct order</p>
+
+		<p>At the start, the order will be shown on the screen for 3 seconds [will test].<br></p>
+		<p>Then the player will be shown the dishes and must pick the right ones.<br></p>
+		<p>In order to get a perfect score, there must be no mistakes and done within 10 seconds [will test as well].</p>
+
+		<p>There will be 2 difficulties, easy and hell mode.<br><br>
+
+		For <strong>EASY</strong> mode:<br>
+		-10 to 20 tickets<br>
+		-Max 5 seconds to look at the tickets<br>
+		-Max 12 seconds to complete the ticket<br>
+
+		<br>
+		For <strong>HELL</strong> mode:<br>
+		-25+ tickets<br>
+		-Max 3 seconds to look at the tickets<br>
+		-Max 8 seconds to complete the ticket<br>
+
+		<br>
+		I will update the information once everything is finalized.
+		<br>
+	</p>
+
+	</div>
+
+	<button class = "accordion">Info</button>
+	<div class = "panel">
+		<p><strong>High Concept:</strong> Prove that you are worthy of the black jacket</p>
+
+		<p><strong>Genre:</strong> Memory, Matching</p>
+
+		<p><strong>Platform:</strong> Mobile friendly -- Phone, Tablet, PC</p>
+
+		<p><strong>Other:</strong> I do not own anything. Credits to the respectful owners.</p>
+
+		<p>Please check the documentation page for resources used</p>
+	</div>
+
+	<button class = "accordion">Screenshots</button>
+	<div class = "panel">
+		<br>
+		<img src = "media/screen1.png" alt = "Intro screen to mini-game">
+		<p>The start screen for the game (Will make my own, with pixel font)</p>
+
+	</div>
+
+	<button class = "accordion">About The Developer(s)</button>
+	<div class = "panel">
+		<p>Ilana Leva is currently a second year New Media Interactive Development (NMID) Major. She is pursuing a minor in Mathematics. Her interests inlcude painting, sleeping, and playing with her dog.</p>
+		<p>Languages: C#, Java, Python, JavaScript, C, Ruby, HTML/CSS, PHP</p>
+		<p>Programs: Adobe Illustrator, Adobe PhotoShop, Microsoft Visual Studios, PaintTool SAI, Processing</p>
+	</div>
+</div>
+
+<div class = "footer">
+	<h1></h1>
+</div>
+
+<script>
+
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+	function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+</body>
+
+</html>

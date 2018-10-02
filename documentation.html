@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cuprum" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/indexcss.css">
+
+	<title>HK Game Doc</title>
+</head>
+
+<body>
+	<div class = "header">
+		<h1></h1>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/index.html">Home</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/project.html">Test Your Skills</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/proposal.html">Proposal</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/documentation.html">Documentation</a>
+</div>
+
+
+<span id = "navIcon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<div class = "content">
+	<h1>Documentation</h1>
+
+	<p>I intend to do more drawings, either of food and/or backgrounds. Also will work on trying to get that Gordon Ramsay soundboard going along with the game.</p>
+
+	<p>I used w3schools quite a bit to enhance my website. Like the accordion layout and the hamburger menu. I used the color picker on the website as well to help give my website more color</p>
+
+	<p>There were 3 websites that I used to find photos that I could use that had no copyright to them. I took some of the images I found and put them in Adobe Illustrator to give them text.</p>
+
+	<p>The Menu of Hell's Kitchen will be helpful for implementation in my game, where I will use the actual dishes in orders. So it will be realistic to the TV Series.</p>
+
+	<p>I plan to keep the same kind of color theme, becuase it is kind of a nice pastel blue that isn't too harsh on the eyes.</p>
+
+	<p>I will update the the resources list as I get further into the project</p>
+    
+    <p>Project 3: The PixiJS implementation</p>
+    
+    <p>I decided to use a click and drag function to be the main point of this game, the user would essentially drag and drop dishes to the pass in order to send the dishes off to service.</p>
+    
+    <p>Click and drag wasnt working as I expected, so I used the click function instead. I also made all of the art. I took some code from online, to help me. Google really helped me and so did pixijs.io because they had some really helpful examples.</p>
+    
+    <p>I got some great feedback from my classmates about the game, I did implement it, or at least try to. Like there is a timer that will force the next wave if they dont go to the next wave in time. I kept the dishes in a static position and the user will click the food without it chaning position. Then the order will update depending on what you clicked, you get deducted points for clicking the wrong food.</p>
+
+	RESOURCES USED:
+	<ul>
+		<li><a href = "www.w3schools.com">W3Schools</a> -- CSS, HTML, JS tutorials</li>
+		<li><a href = "www.pexels.com">Pexels</a> -- Site with free to use photos</li>
+		<li><a href = "https://fonts.google.com/">Google Fonts</a> -- Found and used fonts</li>
+		<li><a href = "https://en.wikipedia.org/wiki/Hell%27s_Kitchen_(U.S._TV_series)">Wiki of Hell's Kitchen</a> -- Researched about the TV</li>
+		<li><a href = "https://www.caesars.com/content/dam/clv/Dining/Casual/hellskitchen/Menus/clv-gordon-ramsay-hells-kitchen-dinner-menu.pdf">Menu at Hell's Kitchen</a> (Ceasers) -- Actual dishes to be implemented in the game</li>
+		<li><a href = "https://unsplash.com/">Unsplash</a> -- Another site where photos are free to use</li>
+		<li><a href = "https://pixabay.com/">Pixabay</a> -- Another site where photos are free to use</li>
+        <li><a href = "www.pixijs.io">PixiJS Page</a> -- Useful resource for JS tutorials and documentation that I used quite a bit</li>
+        <li><a href = "www.freesound.org">Freesound</a> -- I used this site to get my sounds for the game</li>
+	</ul>
+
+</div>
+
+<div class = "footer">
+	<h1></h1>
+</div>
+
+<script>
+
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+	function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+
+</body>
+
+</html>

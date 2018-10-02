@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cuprum|Permanent+Marker|Exo" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/indexcss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.0/pixi.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
+    
+    <script src = "js/classes.js"></script>
+    <script src = "js/main.js"></script>
+
+	<title>Can You Survive Hell's Kitchen?</title>
+</head>
+
+<body>
+	<div class = "header">
+		<h1></h1>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/index.html">Home</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/project.html">Test Your Skills</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/proposal.html">Proposal</a>
+  	<a href="https://people.rit.edu/ifl6325/230/project1/documentation.html">Documentation</a>
+	</div>
+
+<span id = "navIcon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<div class = "content">
+
+</div>
+    
+
+<script>
+
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+	function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+    
+    <footer><div class = "footer">
+        <h1></h1>
+</div></footer>
+    
+</body>
+
+</html>
