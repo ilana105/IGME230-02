@@ -1,0 +1,171 @@
+body {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 14pt;
+}
+
+h1, h2 {
+	font-family: 'Amatic SC', cursive;
+}
+
+p {
+	text-indent: 20px;
+}
+
+a:link {
+	color: #336699;
+}
+
+a:visited {
+	color: #19334D;
+}
+
+a:hover {
+	color: #8BB3DA;
+}
+
+a:active {
+	color: #C5D7ED;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #85ADAD;
+}
+
+.header {
+    background-color: #E0EBEB;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.footer {
+    background-color: #E0EBEB;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+	margin: auto;
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.content p {
+	text-indent: 0px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Navigation bar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #141F1F;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #5A8C8C;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#navIcon {
+	padding-left: 120px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #A4C1C1;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;	
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background-color: #86ACAC;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 0 18px;
+	background-color: #E0EBEB;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: "\021E9"; /* Downwards arrow to "expand more" */
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\021E7"; /* Upwards arrow to "expand less" */
+}
+
+/* Fixing the margin for the canvas*/
+canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+@media only screen and (max-width: 680px) {
+    /* For mobile phones: */
+    .content {
+    	padding: 10px;
+    }
+
+    .sidenav {
+    	padding-top: 15px;
+    }
+
+    .sidenav a {
+    	font-size: 18px;
+    }
+
+    #navIcon {
+    	padding-left: 10px;
+    }
+}
